@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Exercise 2: Set a layout manager</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Use the same title as the StartHere -->
+    <header>RecyclerView and CardView in Android</header>
+
+   	<section id="main">
+
+		<h1 id="page-title"></h1>
+		
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h2>Duration</h2>
+		<p>
+			5 minutes
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<div class="hintblock">
+			<strong>Tip:</strong> If you are doing this exercise live in a session, make sure to make good use of the instructor,
+			they are online to answer any questions you have!
+		</div>
+		
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h2>Goals</h2>
+
+		<p>
+			The goal here is to load a layout manager into your <code>RecyclerView</code>.
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h2>Required assets</h2>
+		<p>
+			The provided <strong>Resources</strong> folder for this part contains a subfolder named <strong>Completed</strong> with a
+			solution you can use to check your work. Please make sure you have this folder before you begin.
+
+			This lab is a continuation of the previous one. If you did not complete the previous exercise, you can use the
+			<strong>Completed</strong> solution from the previous part as starter code for this part.
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h1>Steps</h1>
+		<p>
+			Below are the step-by-step instructions to implement the exercise.
+		</p>
+
+		<h2>Layout manager</h2>
+
+		<ol>
+			<li>
+				Open <strong>MainActivity.cs</strong>.
+			</li>
+
+			<li>
+				Add a <code>LinearLayoutManager</code> to your <code>RecyclerView</code>.
+				Choose a vertical layout.
+<p>
+<a href="#" onclick="toggleCode(this,'setlm');return false;" class="uiitem">Show Code</a>
+<div class="indent-large" id="setlm" style="display:none;">
+<pre class="prettyprint">
+recyclerView.SetLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.Vertical, false));
+</pre>
+</div>
+</p>
+			</li>
+			
+			<li>
+				Compile your app. You do not need to run it since it will not display any output.
+			</li>
+		</ol>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h1>Summary</h1>
+		<p>
+			In this exercise, you loaded a <code>LinearLayoutManager</code> into your <code>RecyclerView</code>.
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<div class="align-right">
+			<a href="../index.html">Go Back</a>
+		</div>
+
+	</section>
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+    <footer>Copyright (C) 2018 Xamarin Inc., Microsoft.</footer>
+</body>
+</html>
