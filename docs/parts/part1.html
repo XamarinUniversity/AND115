@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+    <title>Exercise 1: Create a RecyclerView</title>
+    <link rel="stylesheet" type="text/css" href="./res/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./res/styles/prettify.css" />
+    <link rel="stylesheet" type="text/css" href="./res/styles/styles.css">
+</head>
+
+<body>
+    <!-- Use the same title as the StartHere -->
+    <header>RecyclerView and CardView in Android</header>
+
+   	<section id="main">
+
+		<h1 id="page-title"></h1>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h2>Duration</h2>
+		<p>
+			10 minutes
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<div class="hintblock">
+			<strong>Tip:</strong> If you are doing this exercise live in a session, make sure to make good use of the instructor,
+			they are online to answer any questions you have!
+		</div>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h2>Goals</h2>
+
+		<p>
+			The goal here is to create a new project and add a <code>RecyclerView</code> to your main Activity. This first part is mostly setup;
+			the project will eventually display information about a collection of restaurants.
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h2>Required assets</h2>
+		<p>
+			The provided <strong>Resources</strong> folder for this part contains a subfolder named <strong>Completed</strong> with a
+			solution you can use to check your work. Please make sure you have this folder before you begin.
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h1>Steps</h1>
+		<p>
+			Below are the step-by-step instructions to implement the exercise.
+		</p>
+
+		<h2>Dining application</h2>
+
+		<ol>
+			<li>
+				<ide name="vs">
+					Create a new Xamarin.Android application (Single View) named <strong>Dining</strong>.
+				</ide>
+				<ide name="xs">
+					Create a new Xamarin.Android application named <strong>Dining</strong>.
+				</ide>
+			</li>
+
+			<li>
+				Add the <strong>Xamarin Support Library v7 RecyclerView</strong> <a target="_blank" href="http://developer.xamarin.com/guides/cross-platform/application_fundamentals/nuget_walkthrough/">NuGet package</a> to your project. Note that the RecyclerView package needs <strong>Xamarin.Android.Support.v4</strong> - this dependency will be added automatically if it is not already part of your project.
+			</li>
+
+			<li>
+				<ide name="vs">
+					Open <strong>Resources</strong> > <strong>layout</strong> > <strong>content_main.axml</strong>.
+				</ide>
+				<ide name="xs">
+					Open <strong>Main.axml</strong>.
+				</ide>
+			</li>
+
+			<li>
+				<ide name="vs">
+					Remove the <code>TextView</code> that was included as part of the start code.
+				</ide>
+				<ide name="xs">
+					Remove the button that was included as part of the start code.
+				</ide>
+			</li>
+
+			<li>
+				Add a <code>RecyclerView</code> to your root layout. Give it an id so you can access it from your code-behind.
+<p>
+<a href="#" onclick="toggleCode(this,'addrv');return false;" class="uiitem">Show Code</a>
+<div class="indent-large" id="addrv" style="display:none;">
+<pre class="prettyprint">
+&lt;android.support.v7.widget.RecyclerView
+  android:id           ="@+id/recyclerView"
+  android:layout_width ="match_parent"
+  android:layout_height="wrap_content" /&gt;
+</pre>
+</div>
+</p>
+			</li>
+
+			<li>
+				Open <strong>MainActivity.cs</strong>.
+			</li>
+
+			<ide name="xs">
+				<li>
+					Remove the code to set the click-count on the button. This was added as part of the starter template and will not be needed.
+				</li>
+			</ide>
+
+			<li>
+				Add a <code>RecyclerView</code> field to your <code>MainActivity</code> class.
+			</li>
+
+			<li>
+				Inside <code>OnCreate</code>, use <code>FindViewById</code> to get a reference to the <code>RecyclerView</code> in your UI and load the reference into your field.
+			</li>
+
+			<li>
+				Compile your app. Do not run it; it will fail since you have not yet loaded a layout manager.
+			</li>
+		</ol>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<h1>Summary</h1>
+		<p>
+			Android packaged the <code>RecyclerView</code> class in a support library so it will be widely available across Android
+			versions. In this exercise, you setup your project to use a <code>RecyclerView</code> by first adding the package
+			and then creating an instance in your UI.
+		</p>
+
+		<!-- --------------------------------------------------------------------------------------------------------------------------- -->
+
+		<div class="align-right">
+			<a href="../index.html">Go Back</a>
+		</div>
+
+	</section>
+
+    <script src="./res/js/jquery.min.js"></script>
+    <script src="./res/js/prettify.js"></script>
+    <script src="./res/js/script.js"></script>
+
+    <footer>Copyright (C) 2018 Xamarin Inc., Microsoft.</footer>
+</body>
+</html>
